@@ -22,5 +22,11 @@
     "@storybook/react": "^3.2.8",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-links": "^3.2.6"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.1.0",
+    "@storybook/react": "^3.2.8",
+    "@storybook/addon-actions": "^3.2.6",
+    "@storybook/addon-links": "^3.2.6"
   }
 }
