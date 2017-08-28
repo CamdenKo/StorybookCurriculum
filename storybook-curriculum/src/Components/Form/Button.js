@@ -5,8 +5,8 @@ export default (props) => {
     width: '300px',
     height: '80px',
   }
-  const conditionalClassName = props.primary ? 'colorWhite' : 'colorPrimary'
-  const className = `fontSizeXXL ${conditionalClassName}`
+  const conditionalClassName = props.primary ? 'colorWhite borderWhite backgroundColorPrimary' : 'colorPrimary borderPrimary backgroundColorWhite'
+  const className = `fontSizeXXL borderRadiusRounded ${conditionalClassName}`
   return (
     <button
       className={className}

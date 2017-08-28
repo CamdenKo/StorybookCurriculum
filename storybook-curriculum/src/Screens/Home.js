@@ -5,5 +5,10 @@ import {
 } from '../Components'
 
 export default () => (
-  <Button>asdf</Button>
+  <div>
+    Button <br />
+    <Button>Secondary Button</Button><br />
+    Primary Button <br />
+    <Button primary>Primary Button</Button><br />
+  </div>
 )

@@ -25,6 +25,22 @@ html {
   color: var(--white-color);
 }
 
+.backgroundColorPrimary {
+  background-color: var(--primary-color);
+}
+
+.backgroundColorSecondary {
+  background-color: var(--secondary-color);
+}
+
+.backgroundColorBlack {
+  background-color: var(--black-color);
+}
+
+.backgroundColorWhite {
+  background-color: var(--white-color);
+}
+
 .borderPrimary {
   border: var(--primary-color) 2px solid;
 }
