@@ -18,3 +18,5 @@ Storybook has hot reloading, meaning that any change you make to a React Compone
 Open up the "Button with text" story in the Storybook client. Then on another monitor, open `stories/index.js`.
 
 Now, on line 12, edit the text inside of the <Button> component from 'Hello Button' and save your changes. And voila! you should be see your changes in real time.
+
+Let's try working with the React Component itself.

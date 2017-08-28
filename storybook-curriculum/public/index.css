@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #00ADB5;
+  --secondary-color: #393E46;
+  --black-color: #222831;
+  --white-color: #EEEEEE;
+}
+
+html {
+  background-color:white;
+}
+
+.colorPrimary {
+  color: var(--primary-color);
+}
+
+.colorSecondary {
+  color: var(--secondary-color);
+}
+
+.colorBlack {
+  color: var(--black-color);
+}
+
+.colorWhite {
+  color: var(--white-color);
+}
+
+.borderPrimary {
+  border: var(--primary-color) 2px solid;
+}
+
+.borderWhite {
+  border: var(--white-color) 2px solid;
+}
+
+.borderRadiusRounded {
+  border-radius: 100px;
+}
+
+.fontSizeXXL {
+  font-size: xx-large;
+}
