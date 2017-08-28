@@ -10,13 +10,12 @@ export default (props) => {
     font-size: large;
     color: ${({ theme }) => props.primary ? 'white' : theme.primary};
     background-color: ${({ theme }) => props.primary ? theme.primary : 'white'};
+    border: ${({ theme }) => theme.primary} 2px solid;
+    border-radius: 100px;
   `
-  console.log(props)
-  const className = `borderRadiusRounded borderPrimary`
   return (
     <Button
       onClick={props.onClick}
-      className={className}
     >
       {props.children}
     </Button>
