@@ -1,14 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 
 export default (props) => {
-  // const conditionalClassName = props.disabled ?
-  const style = {
-    height: '30px',
-    fontSize: '20px',
-  }
+  const TextInput = styled.input`
+    height: 30px;
+    font-size: 20px;
+  `
   return (
-    <input
-      style={style}
+    <TextInput
       {...props}
     />
   )

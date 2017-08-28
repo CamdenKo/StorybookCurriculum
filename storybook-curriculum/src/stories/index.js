@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import '../../public/index.css'
 import {
   Button,
+  TextInput,
 } from '../Components'
 import theme from '../theme'
 
@@ -18,3 +19,7 @@ addDecorator(story => (
 storiesOf('Button', module)
   .add('Primary Button', () => <Button primary onClick={action('clicked')}>Primary Button</Button>)
   .add('Secondary Button', () => <Button onClick={action('clicked')}>Secondary Button</Button>)
+
+storiesOf('Text Input', module)
+  .add('No Text', () => <TextInput />)
+  // .add('Text', <TextInput placeholder="Sample Text" />)
