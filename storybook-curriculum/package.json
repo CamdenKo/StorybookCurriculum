@@ -10,7 +10,8 @@
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,9 +25,9 @@
     "@storybook/addon-links": "^3.2.6"
   },
   "devDependencies": {
-    "eslint-config-airbnb": "^15.1.0",
-    "@storybook/react": "^3.2.8",
     "@storybook/addon-actions": "^3.2.6",
-    "@storybook/addon-links": "^3.2.6"
+    "@storybook/addon-links": "^3.2.6",
+    "@storybook/react": "^3.2.8",
+    "eslint-config-airbnb": "^15.1.0"
   }
 }

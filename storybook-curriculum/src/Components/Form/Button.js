@@ -1,21 +1,24 @@
 import React from 'react'
-// import '../../../public/index.css'
+import styled from 'styled-components'
+
 
 export default (props) => {
-  const style = {
-    height: '80px',
-    paddingLeft: '30px',
-    paddingRight: '30px',
-  }
-  const conditionalClassName = props.primary ? 'colorWhite  backgroundColorPrimary' : 'colorPrimary backgroundColorWhite'
-  const className = `fontSizeXXL borderRadiusRounded borderPrimary ${conditionalClassName}`
+  const Button = styled.button`
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    color: ${({ theme }) => props.primary ? 'white' : theme.primary};
+    background-color: ${({ theme }) => props.primary ? theme.primary : 'white'};
+  `
+  console.log(props)
+  const className = `borderRadiusRounded borderPrimary`
   return (
-    <button
+    <Button
       onClick={props.onClick}
       className={className}
-      style={style}
     >
       {props.children}
-    </button>
+    </Button>
   )
 }
