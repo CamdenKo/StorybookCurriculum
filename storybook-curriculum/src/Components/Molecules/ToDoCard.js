@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import {
   Checkbox,
-} from '../../Components'
+} from '../Atoms'
 
 export default (props) => {
   const Card = styled.div`

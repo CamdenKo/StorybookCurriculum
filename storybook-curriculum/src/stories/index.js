@@ -13,6 +13,9 @@ import {
   ToDoCard,
   Checkbox,
   ToDoList,
+  AddForm,
+  AddButton,
+  FullTask,
 } from '../Components'
 import theme from '../theme'
 import store, {
@@ -23,28 +26,31 @@ store.dispatch(addTodo('Todo1'))
 store.dispatch(addTodo('Todo2'))
 
 addDecorator(story => (
-  <ThemeProvider theme={theme}>
-    {story()}
-  </ThemeProvider>
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      {story()}
+    </ThemeProvider>
+  </Provider>
 ))
 
-storiesOf('Form/Button', module)
+storiesOf('Atoms/Button', module)
   .add('Primary Button', () => <Button primary onClick={action('clicked')}>Primary Button</Button>)
   .add('Secondary Button', () => <Button onClick={action('clicked')}>Secondary Button</Button>)
+  .add('Add Button', () => <AddButton onClick={action('Add Button')} />)
 
-storiesOf('Form/Text Input', module)
+storiesOf('Atoms/Text Input', module)
   .add('No Text', () => <TextInput placeholder="place-holder" />)
   .add('Text', () => <TextInput value="Sample Text" />)
 
-storiesOf('List', module)
-  .addDecorator(story => (
-    <Provider store={store}>
-      {story()}
-    </Provider>
-  ))
+storiesOf('Atoms/Checkbox', module)
+  .add('Unchecked', () => <Checkbox />)
+  .add('Checked', () => <Checkbox checked />)
+
+storiesOf('Molecules', module)
+  .add('AddForm', () => <AddForm />)
   .add('List', () => <ToDoList />)
 
-storiesOf('Card/Content', module)
+storiesOf('Molecules/ToDoCard', module)
   .addDecorator(story => (
     <div style={{ width: '300px' }}>
       {story()}
@@ -54,6 +60,5 @@ storiesOf('Card/Content', module)
   .add('Short Text Checked', () => <ToDoCard checked>SHORT TEXT</ToDoCard>)
   .add('Long Text Unchecked', () => <ToDoCard>This is a lot of text that I am using for demonstration purposes this will have a lot of content in it</ToDoCard>)
 
-storiesOf('Card/Checkbox', module)
-  .add('Unchecked', () => <Checkbox />)
-  .add('Checked', () => <Checkbox checked />)
+storiesOf('Organisms/FullTask', module)
+  .add('FullTaskModule', () => <FullTask />)
