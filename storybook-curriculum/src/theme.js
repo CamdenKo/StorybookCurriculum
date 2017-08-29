@@ -12,6 +12,7 @@ export default {
 }
 
 const sizes = {
+  phonePhone: 300,
   phoneTablet: 600,
   tabletTablet: 900,
   tabletDesktop: 1200,

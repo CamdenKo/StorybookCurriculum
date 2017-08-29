@@ -7,11 +7,10 @@ export default (props) => {
     font-size: 20px;
     border: 0px;
     width: 100%;
-    margin: 0 20px;
   `
   return (
     <TextInput
-      autoFocus
+
       {...props}
     />
   )

@@ -11,6 +11,7 @@ import {
 import {
   addTodo,
 } from '../../store'
+import { media } from '../../theme'
 
 class Form extends React.Component {
   constructor() {
@@ -21,8 +22,14 @@ class Form extends React.Component {
     this.changeText = this.changeText.bind(this)
     this.submitText = this.submitText.bind(this)
     this.Container = styled.div`
-      display:flex;
+      display: flex;
       align-items: center;
+      flex-direction: row;
+      padding: 20px;
+      ${media.phonePhone`
+        flex-direction: column;
+        align-items: flex-start;
+      `}
     `
 
     this.AddButtonContainer = styled.div`
@@ -30,8 +37,8 @@ class Form extends React.Component {
     `
   }
 
-  changeText(text) {
-    this.setState({ text })
+  changeText(event) {
+    this.setState({ text: event.target.value })
   }
 
   submitText(text) {
@@ -43,7 +50,7 @@ class Form extends React.Component {
   render() {
     return (
       <this.Container>
-        <TextInput placeholder="Add Task" />
+        <TextInput placeholder="Add Task" onChange={this.changeText} value={this.state.text} />
         <this.AddButtonContainer>
           <AddButton />
         </this.AddButtonContainer>
