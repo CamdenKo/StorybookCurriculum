@@ -6,6 +6,8 @@ export default (props) => {
     height: 35px;
     font-size: 20px;
     border: 0px;
+    width: 100%;
+    margin: 0 20px;
   `
   return (
     <TextInput

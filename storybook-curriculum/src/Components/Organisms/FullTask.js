@@ -17,9 +17,7 @@ const Container = styled.div`
 
 export default () => (
   <Container>
-    <div>
-      <ToDoList />
-      <AddForm />
-    </div>
+    <ToDoList />
+    <AddForm />
   </Container>
 )
