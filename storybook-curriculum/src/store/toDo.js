@@ -14,12 +14,12 @@ export default (state = [], action) => {
       return [...state, {
         id: action.id,
         text: action.text,
-        completed: false,
+        checked: false,
       }]
     case DELETE_TODO:
       return state.filter(todo => todo.id !== action.id)
     case TOGGLE_TODO:
-      return state.map((todo) => { return todo.id === action.id ? { ...todo, completed: !todo.completed } : todo })
+      return state.map((todo) => { return todo.id === action.id ? { ...todo, checked: !todo.checked } : todo })
     default:
       return state
   }

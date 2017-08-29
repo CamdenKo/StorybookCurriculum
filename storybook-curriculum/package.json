@@ -28,6 +28,7 @@
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-links": "^3.2.6",
     "@storybook/react": "^3.2.8",
-    "eslint-config-airbnb": "^15.1.0"
+    "eslint-config-airbnb": "^15.1.0",
+    "stylelint": "^8.0.0"
   }
 }
