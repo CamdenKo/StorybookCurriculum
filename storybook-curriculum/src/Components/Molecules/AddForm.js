@@ -24,6 +24,10 @@ class Form extends React.Component {
       display:flex;
       align-items: center;
     `
+
+    this.AddButtonContainer = styled.div`
+      flex-shrink: 0;
+    `
   }
 
   changeText(text) {
@@ -40,7 +44,9 @@ class Form extends React.Component {
     return (
       <this.Container>
         <TextInput placeholder="Add Task" />
-        <AddButton />
+        <this.AddButtonContainer>
+          <AddButton />
+        </this.AddButtonContainer>
       </this.Container>
     )
   }

@@ -22,8 +22,10 @@ import store, {
   addTodo,
 } from '../store'
 
-store.dispatch(addTodo('Todo1'))
-store.dispatch(addTodo('Todo2'))
+if (!store.getState().toDo.length) {
+  store.dispatch(addTodo('Todo1'))
+  store.dispatch(addTodo('Todo2'))
+}
 
 addDecorator(story => (
   <Provider store={store}>

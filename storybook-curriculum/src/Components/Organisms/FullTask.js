@@ -5,10 +5,21 @@ import {
   ToDoList,
   AddForm,
 } from '../../Components'
+import {
+  media,
+} from '../../theme'
+
+const Container = styled.div`
+  width: 70%;
+  ${media.tabletTablet`width: 100%;`}
+  margin: auto;
+`
 
 export default () => (
-  <div>
-    <ToDoList />
-    <AddForm />
-  </div>
+  <Container>
+    <div>
+      <ToDoList />
+      <AddForm />
+    </div>
+  </Container>
 )

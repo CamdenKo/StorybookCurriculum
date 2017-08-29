@@ -15,8 +15,7 @@ import {
 const toDoList = (props) => {
   const Container = styled.div`
     margin: auto;
-    width: 70%;
-    ${media.tabletTablet`width: 100%;`}
+    width: 100%;
   `
   return (
     <Container>
