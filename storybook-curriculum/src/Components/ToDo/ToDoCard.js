@@ -11,15 +11,19 @@ export default (props) => {
     padding: 10px;
     width: 100%;
     border-radius: 2px;
-    padding: 0px 10px;
+    padding: 15px;
     font-family: Lato;
     display: flex;
     align-items: center;
+    margin: 10px 0px;
+    box-sizing: border-box;
   `
   return (
     <Card>
-      <Checkbox checked={props.checked} />
-      {props.children}
+      <Checkbox checked={props.checked} onClick={props.onClick} />
+      <div>
+        {props.children}
+      </div>
     </Card>
   )
 }

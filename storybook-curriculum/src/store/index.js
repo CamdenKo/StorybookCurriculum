@@ -13,4 +13,4 @@ const reducer = combineReducers({
 const store = createStore(reducer, composeWithDevTools());
 
 export default store
-
+export * from './toDo'

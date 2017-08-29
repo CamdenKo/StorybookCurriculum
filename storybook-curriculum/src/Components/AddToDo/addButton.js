@@ -7,7 +7,15 @@ export default () => {
     width: 30px;
     height: auto;
   `
+  const Inner = styled.div`
+    font-size: 20px;
+    line-height: 20px;
+  `
   return (
-
+    <Circle>
+      <Inner>
+        +
+      </Inner>
+    </Circle>
   )
 }
